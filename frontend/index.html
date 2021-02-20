@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Serverless Movie Website Example Project"  />
+    <meta name="classification" content="Personel , Blog"  />
+    <meta name="rating" content="All"  />
+    <meta name="language" content="Turkish,English"  />
+    <meta name="owner" content="Hakkı SABAH"  />
+    <meta name="creator" content="hakkisabah@hotmail.com"  />
+    <meta name="generator" content="hakkisabah@hotmail.com"  />
+    <meta name="distribution" content="global"  />
+    <meta property="og:type" content="blog"  />
+    <meta property="og:title" content="Serverless Movie Website Example Project"  />
+    <meta property="og:description" content="Serverless Movie Website Example Project"  />
+    <meta property="og:url" content="https://www.moviesdb.space/"  />
+    <meta property="og:site_name" content="moviesdb.space"  />
+    <meta property="og:image" content="https://www.moviesdb.space/assets/images/kodluyoruz-atolye15.png"  />
+    <meta name="twitter:card" content="summary_large_image"  />
+    <meta name="twitter:title" content="Serverless Movie Website Example Project"  />
+    <meta name="twitter:description" content="Serverless Movie Website Example Project"  />
+    <meta name="twitter:site" content="@hakkisabah"  />
+    <meta name="twitter:image" content="https://www.moviesdb.space/assets/images/kodluyoruz-atolye15.png"  />
+    <title>Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div id="overlay">
+        <img id="overlayImg" src="" onerror="this.src='assets/images/no-image-found-360x250.png'">
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="box rounded">
+                <form id="searchForm">
+                    <div class="mb-3">
+                        <label for="searchInput" class="form-label">Search Movie</label>
+                        <input type="text" class="form-control" id="searchInput">
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Search</button>
+                </form>
+            </div>
+            <div id="byyear" class="box rounded">
+                <h5>Filter by year</h5>
+            </div>
+            <div  id="bygenre" class="box rounded">
+                <h5>Filter by genre</h5>
+            </div>
+            <div class="box rounded">
+                <h5>Clear Filter & Search</h5>
+                <button id="clearFilter" type="submit" class="btn btn-primary" >Clear</button>
+            </div>
+        </div>
+        <div class="col-md-9 mt-3">
+            <table class="table table-striped table-hover rounded" id="movies-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="./lib/main.js" type="module"></script>
+</body>
+</html>
