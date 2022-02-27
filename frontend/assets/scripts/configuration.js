@@ -40,4 +40,4 @@ export const tableElements = [
     },
 ]
 
-export const apiUrl = 'https://zbg6f8lavb.execute-api.eu-central-1.amazonaws.com/api/'
+export const apiUrl = 'https://7glv7h90zh.execute-api.eu-central-1.amazonaws.com/api/'

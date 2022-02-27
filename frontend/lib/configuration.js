@@ -34,4 +34,4 @@ export var tableElements = [{
   methodName: "getElementById",
   params: "searchForm"
 }];
-export var apiUrl = 'https://zbg6f8lavb.execute-api.eu-central-1.amazonaws.com/api/';
+export var apiUrl = 'https://7glv7h90zh.execute-api.eu-central-1.amazonaws.com/api/';

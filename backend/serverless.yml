@@ -1,8 +1,8 @@
-service: my-serverless-app
+service: moviesdb
 
 provider:
  name: aws
- runtime: nodejs12.x
+ runtime: nodejs14.x
  memorySize: 128
  timeout: 10
  stage: api

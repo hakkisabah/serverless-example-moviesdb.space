@@ -6,7 +6,7 @@ const helmet = require("helmet")
 const cors = require('cors')
 
 const corsOptions = {
-    origin: 'https://www.moviesdb.space',
+    origin: 'https://moviesdb.hakkisabah.com',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
